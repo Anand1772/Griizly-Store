@@ -1,0 +1,451 @@
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap Case</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  input#inputSuccess2{
+  margin-left: 30px;
+  margin-top: 45px;
+  border-radius: 25px;
+  }
+  div#notification
+  {
+    margin-left: 600px;
+    margin-top: 45px;
+  }
+  div#welcome{
+  margin-left: 50px;
+  margin-top: 45px;
+  }
+  input#mybtn{
+  margin-left: 100px;
+  margin-top: 45px;
+  border-radius: 25px;
+  width : 100px;
+  }
+  
+  .well{
+  
+  height: 800px;
+  width: 600px;
+  margin-left: -375px;
+  margin-top: 20px;
+  }
+  button#btn2{
+  margin-top: 40px;
+  border-radius: 25px;
+  width: 140px;
+  }
+  button#btn3{
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: -80px;
+  }
+  input#inputSuccess{
+  margin-left:-90px;
+  margin-top: 10px;
+  border-radius: 25px;
+  }
+  span#searchicon{
+  margin-top: 10px;
+  
+  }
+  span#prod{
+  font-size: 30px;
+  
+  }
+  span#profile{
+  margin-top: 20px;
+  }
+  tr{
+  height: 50px;
+  }
+  
+  th,td{
+  border: solid 1px #d4c2c2;
+  }
+  table{
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-top: 20px;
+  }
+	
+	
+   .input-container {
+  margin-top: 2px;
+}
+
+/* use :not selector here to support older broswers 
+   more info: http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/
+*/
+
+.input-container input[type=checkbox]:not(old) {
+  opacity: 0;
+  /* match the dimentsions of the custom label */
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * The box
+ */
+
+.input-container label {
+  position: relative;
+}
+
+.input-container label::after {
+  content: "";
+  position: absolute;
+  /*cover the default input */
+  top: -10px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius:20px;
+  transform: rotate(0);
+  pointer-events: none;
+  text-align: center;
+  color: black; /* easier to see in demo */
+}
+
+
+
+.input-container input[type=checkbox]:checked+label:after {
+  content: "\2713";
+ }
+ 
+ 
+ 
+ .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+        color: black;
+        background-color: #7a7977;
+    }
+
+        .nav-pills > li.active > a:hover {
+            background-color: #55585e;
+            color:black;
+        }
+   	#id5{
+background-color:#ede8e8;
+
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  font-size: 140%;
+  margin: 4px 2px;
+  width: 150px;
+height: 28px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: transparent;
+  margin-top:50px;
+  
+}
+#id6{
+background-color:#ede8e8;
+
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 140%;
+  margin: 4px 2px;
+  width: 150px;
+height: 28px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: transparent;
+}
+  
+  </style>
+
+</head>
+
+<body>
+
+ 
+
+<nav class="navbar navbar-default">
+
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <h1><img src="images/large_logo.png"></img></h1>
+
+    </div>
+
+    <ul class="nav navbar-nav">
+
+      <li class="active"> 
+
+      <div class="form-group has-feedback">
+      <input type="text" class="form-control" id="inputSuccess2" placeholder="search" size= "40px">
+      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+     </div>
+
+    </li>
+    
+      
+
+      <li>
+      
+      <div id = "notification">
+      <a href=#><i style='font-size:24px' class='far'>&#xf0f3;</i></a>
+      </div>
+      </li>
+
+      <li>
+      
+      <div id="welcome">
+      
+      <i style='font-size:24px'><h2><b>Welcome Admin</b></h2></i>
+      </div>
+      
+      </li>
+
+      <li>
+      <div id="logout">
+      <a href="index.html">
+   <button  id="id5">Logout</button>
+   </a>
+      </div>
+	  </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+ 
+
+<div class="container">
+
+<div class="col-md-4">
+ <div class="well">
+    <div class="row" style="height: 80px;width: 95%;background-color: gray;margin-left:2.5%;position: center;">
+ 	<div class="col-md-2" style="margin-top: 10px; float:left;"><span style="font-size: 40px;color: white;">Profile</span></div>
+ 	<div class="col-md-2"style="margin-top: 25px; float: right"><span style="font-size: 20px;color: white;">Edit</span></div>
+ 	</div>
+ 	<br>
+ 	<div class="row" style="width: 250px;height: 250px;margin-left: 25%;background-color: gray">
+ 	
+ 	</div>
+ 	<div class="row" style="margin-left: 18%;width: 50%;">
+ 	<p ><h1 style="margin-left: 25%;"><b>Helen Cho</b></h1></p>
+ 	<p style="margin-left: 50%;"><span style="font-size: 30px;"><b>ID</b></span></p>
+ 	<p style="margin-left: 25%;"><span style="font-size: 30px;">GRZLY12345</span></p>
+ 	<br>
+ 	<p style="margin-left: 25%;"><span style="font-size: 30px;"><b>Designation</b></span></p>
+ 	<p style="margin-left: 25%;"><span style="font-size: 30px;">Sr. Admin</span></p>
+ 	<br>
+ 	<p style="margin-left: 25%;"><span style="font-size: 30px;"><b>Office</b></span></p>
+ 	<p style="margin-left: 25%;"><span style="font-size: 30px;">NYC NY,USA</span></p>
+ 	</div>
+ </div>
+ 
+ 
+</div>
+ 
+ <div class="col-md-8">
+ <ul class="nav nav-pills nav-justified" style="background-color:#e6e6e6;">
+
+    <li class="active" style=margin-top:20px><a data-toggle="pill" href="#home"><span id="prod" style="color:black">PRODUCTS</span></a></li>
+
+    <li style=margin-top:20px><a data-toggle="pill" href="#menu1"><span id="prod" style="color:black">VENDORS</span></a></li>
+<li style=margin-top:20px><a data-toggle="pill" href="#menu1"><span id="prod" style="color:black">CATEGORIES</span></a></li>
+
+
+
+  </ul>
+
+ 
+
+  
+    <div class="tab-content">
+    <div class = "row">
+    
+    <div class="col-md-2 dropdown">
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id= "btn2">Choose Action>
+    <span class="caret"></span></button>
+    	<ul class="dropdown-menu">
+    	<li><a href="#">HTML</a></li>
+    	<li><a href="#">CSS</a></li>
+    	<li><a href="#">JavaScript</a></li>
+    	</ul>
+    </div>
+    
+    <div class="col-md-4 form-group has-feedback">
+      <input type="text" class="form-control" id="inputSuccess" placeholder="Category Name" size= "40px" style="margin-left: 50px;margin-top: 40px">
+      <span class="glyphicon glyphicon-search form-control-feedback"style="margin-top: 40px;margin-right: -25px;"></span>
+     </div>
+    
+    <div class="col-md-2 dropdown">
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id= "btn2" style="margin-left:100px;">Sort By
+    <span class="caret"></span></button>
+    	<ul class="dropdown-menu">
+    	<li>Product List</li>
+    	<li>Brand</li>
+    	<li>Category</li>
+    	<li>Rating</li>
+    	</ul>
+    </div>
+    
+    <div class="col-md-2">
+    <a href="product_add.html"><input type="button" id="id5" value="Add Product" style="margin-left:440px;margin-top:40px;border-radius: 25px;width: 150px;height:30px;"></input></a>
+    </div>
+    
+    </div>
+    
+    
+    <br>
+    
+    
+    
+    <div class="row">
+    <div id="home" class="tab-pane fade in active">
+
+      <table class="table table-striped" style="height:600px;width: 1100px;margin-left: 20px;">
+      <thead>
+      <tr>
+      <td style="border-left:white">Product List</td>
+      <td >Brand</td>
+      <td >Category</td>
+      <td>Rating</td>
+      <td style="border-right:white"></td>
+      
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td style="border-left:white"><div class="input-container">
+          
+  		  <input type="checkbox" value="1" name="" />
+  		  <label for="customCheckboxInput"></label>Trimmer
+  		  
+		  </div>
+	  </td>
+      <td>Phillips</td>
+      <td>Personal Care</td>
+      <td>4.7</td>
+      <td style="border-right:white"><a href="new_page.html">
+   <button  id="id6">View</button>
+   </a></input> <input id="id6" type="button" value="Block" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Remove" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input></td>
+      </tr>
+      <tr>
+      <td style="border-left:white"><div class="input-container">
+          
+  		  <input type="checkbox" value="1" name="" />
+  		  <label for="customCheckboxInput"></label>Shaver
+  		  
+		  </div>
+	  </td>
+      <td>Braun</td>
+      <td>Personal Care</td>
+      <td>4.8</td>
+      <<td style="border-right:white"><input id="id6" type="button" value="View"style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Block" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Remove" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input></td>
+      </tr>
+      <tr>
+      <td style="border-left:white"><div class="input-container">
+          
+  		  <input type="checkbox" value="1" name="" />
+  		  <label for="customCheckboxInput"></label>Macbook Pro
+  		  
+		  </div>
+	  </td>
+      <td>Apple</td>
+      <td>Laptops</td>
+      <td>4.9</td>
+      <td style="border-right:white"><input id="id6" type="button" value="View"style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Block" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Remove" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input></td>
+      </tr>
+      <tr >
+      <td style="border-left:white">
+         <div class="input-container">
+          
+  		  <input type="checkbox" value="1" name="" />
+  		  <label for="customCheckboxInput"></label>iMac27
+  		  
+		  </div>
+	  </td>  
+      <td>Apple</td>
+      <td>Laptops</td>
+      <td>4.6</td>
+      <td style="border-right:white"><input id="id6" type="button" value="View"style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Block" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Remove" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input></td>
+      </tr>
+      <tr >
+      <td style="border-left:white"><div class="input-container">
+          
+  		  <input type="checkbox" value="1" name="" />
+  		 <label for="customCheckboxInput"></label>Micron Pens
+  		  
+		  </div>
+	  </td>
+      <td>Sakura Pigma</td>
+      <td>Art Suppliers</td>
+      <td>4.1</td>
+      <td style="border-right:white"><input id="id6" type="button" value="View"style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Block" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Remove" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input></td>
+      </tr>
+      <tr >
+      <td style="border-left:white"><div class="input-container">
+          
+  		  <input type="checkbox" value="1" name="" />
+  		  <label for="customCheckboxInput"></label>Paint Markers
+  		  
+		  </div></td>
+      <td>Copic</td>
+      <td>Art Suppliers</td>
+      <td>4.2</td>
+      <td style="border-right:white"><input id="id6" type="button" value="View"style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Block" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input> <input id="id6" type="button" value="Remove" style="border-radius: 25px;margin-left: 30px;width: 100px;"></input></td>
+      </tr>
+      </tbody>
+      </table>
+      
+      
+    </div>
+    
+
+    <div id="menu1" class="tab-pane fade">
+
+      <h3></h3>
+
+      <p></p>
+
+    </div>
+    </div>
+    
+    
+    
+    </div>
+
+    
+  
+ 
+ 
+</div>
+
+
+</div>
+
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+.to{
+width:100%;
+background-color:gainsboro;
+height:65px;
+}
+.cent{
+margin-left:70px;
+margin-top:15px;
+}
+.to1{
+margin-left:40px;
+margin-top:40px;
+width:350px;
+background-color:lightgrey;
+height:700px;
+}
+.to2{
+
+margin-top:10px;
+
+ 
+  border: 5px solid lightgrey;
+background-color:darkgrey;
+height:65px;
+
+}
+.conta{
+margin-top:50px;
+margin-left:100px;
+}
+.t{
+background-color:lightgrey;
+color:grey;
+}
+.y{
+margin-left:500px;
+margin-top:0;
+}
+.ta{
+background-color:grey;
+color:black;
+}
+.but{
+width:80px;
+border-radius:15px;
+margin-left:30px;
+margin-top:12px;
+background-color:dimgrey;
+color:black;
+}
+#div1 {
+text-align:center;
+font-face:verdana;
+font-weight:bold;
+}
+input[type="text"], input[type="password"]
+{
+width:20%;
+align-content:center;
+border-radius:20px;
+background-color:#ebebeb;
+left:100%;
+display:block;
+margin:0 auto;
+}
+input[type="submit"]
+{
+background-color:#aeaeae;
+border-radius:20px;
+width:10%;
+font-face:verdana;
+font-weight:bold;
+font-color:#5d5d5d;
+}
+#navdiv
+{
+background-color:#f2f2f2;
+}
+#srch-term, #searchbtn
+{
+border-radius:20px;
+background-color:#fff;
+margin-top:2px;
+}
+#notif-button
+{
+text-align:center;
+display:block;
+margin:0 auto;
+}
+#bodydiv
+{
+position:relative;
+top:50px;
+padding:30px;
+}
+
+div.well
+{
+width:80%;
+height:700px;
+}
+#pill
+{
+background-color:#727272;
+width:1300px;
+height:70px;
+}
+#products, #vendors, #category
+{
+font-family: "Trebuchet MS";
+color:black;
+font-size:30px;
+height:60px;
+}
+#pill>li.active,
+#pill>li:hover,
+#pill>li:focus {
+   background-color: light grey;
+}
+#products-table th.regular{
+font-family: "Trebuchet MS";
+color:#808080;
+/*width:200%;*/
+border-width:2px;
+text-align:center;
+padding:10px;
+font-size:18px;
+border-color: white #c6c5c5 #c6c5c5 white;
+}
+#products-table td.regular{
+font-family: "Trebuchet MS";
+border-width:2px;
+color:black;
+font-weight:bold;
+text-align:center;
+padding:7px;
+font-size:18px;
+border-color: white #c6c5c5 #c6c5c5 white;
+}
+#products-table td.regular-rating{
+font-family: "Trebuchet MS";
+border-width:2px;
+color:#7c7c7c;
+font-weight:bold;
+text-align:center;
+padding:7px;
+font-size:18px;
+border-color: white #c6c5c5 #c6c5c5 white;
+}
+#products-table th.lastcol
+{
+border-color: white white #c6c5c5 white;
+border-width:2px;
+text-align:center;
+padding:10px;
+font-family: "Trebuchet MS";
+}
+#products-table td.lastcol
+{
+border-color: white white #c6c5c5 white;
+border-width:2px;
+text-align:center;
+padding:10px;
+font-family: "Trebuchet MS";
+}
+#products-table
+{
+
+width:1300px;
+margin-left:6%;
+}
+#products-table th.lastcol input.btn btn-default{
+width:500px;
+}
+#productcheck{
+}
+.name {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.name input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius:50px;
+}
+.name input:checked ~ .checkmark {
+  background-color: black;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.name input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.name .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#home
+{
+margin-left:6%;
+}
+
+#remove7
+{
+	color:white;
+	margin-left:20%;
+}
+</style>
+<body>
+<div  class="to">
+<table cellspacing="10">
+<tr>
+<td><h3>&nbsp&nbsp&nbsp&nbspGRIZZLY</h3></td>
+<td><img src ="images/logo.png" style="width:50px;height:35px;margin-left:10px;margin-top:5px;"></td>
+<td><h3>&nbsp&nbspSTORE</h3></td>
+<td><div class="form-group has-feedback" >
+   <div>
+    <input style="margin-left:40px;margin-top:14px;border-radius:25px;" class="search_b" type="search" class="form-control" placeholder="  Search"  >
+<span  style="margin-top:12px;" class="glyphicon glyphicon-search form-control-feedback"></span>
+</div>
+  </div>
+</td>
+<td><span class="glyphicon glyphicon-bell" style="margin-left:900px;margin-top:12px;"></span></td>
+<td><h4 style="margin-left:20px;margin-top:20px;">Welcome, John Doe&nbsp&nbsp&nbsp&nbsp</h4></td>
+<td>
+<a href="fclogin.html"><div><button class="but" type="button" class="btn btn-default">Logout</button></div></a>
+</td>
+</tr>
+</table>
+
+<div class="conta" >
+<div class="container">
+
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item"><a class="nav-link active ta"href="secondpage.html">PRODUCT</a></li>
+    <li class="nav-item"><a class="nav-link active t" href="finalpage.html">INVENTORY</a></li>
+     <li class="nav-item"><a class="nav-link active t" href="profile.html">PROFILE</a></li>
+  </ul>
+</div>
+</div>
+</br>
+<div class="container">
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <table style="width:1300px;">
+    <tr>
+    <td style="width:33%;">
+    <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="border-radius:20px; background-color:#aeaeae; width:50%; color:#5f5f5f; font-weight:bold;">Choose Action
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div></td>
+<td style="width:33%"><form class="navbar-form" role="search">
+    <div class="form-group has-feedback">
+      <input class="form-control" placeholder="Category Name" name="srch-term" id="srch-term" type="text" style="background-color:#aeaeae; color:#5f5f5f; font-weight:bold;">
+      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </div>
+  </form>
+</td>
+<td style="width:33%"><div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="border-radius:20px; background-color:#aeaeae; width:50%; color:#5f5f5f; font-weight:bold;">Sort By
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div></td>
+<td style="width:33%;">
+<input type="submit" class="btn btn-default" value="Add Product" style="width:180px; color:#e5e5e5; background-color:#2a2a2a"></td>
+</tr>
+    </table>
+    <br/>
+</div>
+</div>
+<!--<div class="y">-->
+<table id="products-table" class="table-bordered">
+    <tr>
+    <th class="regular" style="width:20%;">Products List</th>
+    <th class="regular" style="width:15%;">ID</th>
+    <th class="regular" style="width:15%;">Brand</th>
+    <th class="regular" style="width:15%;">Category</th>
+    <th class="regular" style="width:10%;">Rating</th>
+    <th class="lastcol" style="width:30%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    </tr>
+    <tr>
+    <td class="regular"><div class="checkbox">
+      <label class="name">Trimmer<input type="checkbox" value="" class="productcheck" onchange="document.getElementById('view1').disabled = !this.checked; document.getElementById('block1').disabled = !this.checked; document.getElementById('remove1').disabled = !this.checked;"><span class="checkmark"></span></label>
+    </td>
+    
+    <td class="regular">TRXO098</td>
+    <td class="regular">Philips</td>
+    <td class="regular">Personal Care</td>
+    <td class="regular-rating">4.7</td>
+    <td class="lastcol">
+   <a href=""><input type="submit" id="view1" class="btn btn-default" value="View" style="width:100px;"></a>
+    
+    <input type="submit" id="remove1" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    </tr>
+    <tr>
+    <td class="regular"><div class="checkbox" checked="checked"><span class="checkmark"></span>
+      <label class="name">Shaver<input type="checkbox" value="" class="productcheck" onchange="document.getElementById('view1').disabled = !this.checked; document.getElementById('block1').disabled = !this.checked; document.getElementById('remove1').disabled = !this.checked;"><span class="checkmark"></span></label>
+    </div></td>
+    <td class="regular">BS6785</td>
+    <td class="regular">Braun</td>
+    <td class="regular">Personal Care</td>
+    <td class="regular-rating">4.8</td>
+    <td class="lastcol">
+    <input type="submit" id="view2" class="btn btn-default" value="View" style="width:100px;" disabled>
+    
+    <input type="submit" id="remove2" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    </tr>
+    <tr>
+    <td class="regular"><div class="checkbox">
+      <label class="name">MacBook Pro<input type="checkbox" value="" class="productcheck" onchange="document.getElementById('view1').disabled = !this.checked; document.getElementById('block1').disabled = !this.checked; document.getElementById('remove1').disabled = !this.checked;"><span class="checkmark"></span></label>
+    </div></td>
+    <td class="regular">MAC4567</td>
+    <td class="regular">Apple</td>
+    <td class="regular">Laptops</td>
+    <td class="regular-rating">4.9</td>
+    <td class="lastcol">
+    <input type="submit" id="view3" class="btn btn-default" value="View" style="width:100px;" disabled>
+    
+    <input type="submit" id="remove3" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    </tr>
+    <tr>
+    <td class="regular"><div class="checkbox">
+      <label class="name">iMac 27<input type="checkbox" value="" class="productcheck" onchange="document.getElementById('view1').disabled = !this.checked; document.getElementById('block1').disabled = !this.checked; document.getElementById('remove1').disabled = !this.checked;"><span class="checkmark"></span></label>
+    </div></td>
+    <td class="regular">IMAC3452</td>
+    <td class="regular">Apple</td>
+    <td class="regular">Laptops</td>
+    <td class="regular-rating">4.6</td>
+    <td class="lastcol">
+    <input type="submit" id="view4" class="btn btn-default" value="View" style="width:100px;" disabled>
+    
+    <input type="submit" id="remove4" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    </tr>
+    <tr>
+    <td class="regular"><div class="checkbox">
+      <label class="name">Micron Pens<input type="checkbox" value="" class="productcheck" onchange="document.getElementById('view1').disabled = !this.checked; document.getElementById('block1').disabled = !this.checked; document.getElementById('remove1').disabled = !this.checked;"><span class="checkmark"></span></label>
+    </div></td>
+    <td class="regular">SPMP345</td>
+    <td class="regular">Sakura Pigma</td>
+    <td class="regular">Art Supplies</td>
+    <td class="regular-rating">4.1</td>
+    <td class="lastcol">
+    <input type="submit" id="view5" class="btn btn-default" value="View" style="width:100px;" disabled>
+    
+    <input type="submit" id="remove5" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    </tr>
+    <tr>
+    <td class="regular"><div class="checkbox">
+      <label class="name">Paint Markers<input type="checkbox" value="" class="productcheck" onchange="document.getElementById('view1').disabled = !this.checked; document.getElementById('block1').disabled = !this.checked; document.getElementById('remove1').disabled = !this.checked;"><span class="checkmark"></span></label>
+    </div></td>
+    <td class="regular">PM4567</td>
+    <td class="regular">Copic</td>
+    <td class="regular">Art Supplies</td>
+    <td class="regular-rating">4.2</td>
+    <td class="lastcol">
+    <input type="submit" id="view6" class="btn btn-default" value="View" style="width:100px;" disabled>
+    
+    <input type="submit" id="remove6" class="btn btn-default" value="Remove" style="width:100px;" disabled></td>
+    </tr>
+
+    </table>
+</div>
+</div>
+<div class="to1">
+<div class="to2">
+<h2 style="margin-top:12px;color:white;">&nbsp&nbspPROFILE</h2>
+
+</div>
+<div  >
+<table>
+<tr>
+<img class="cent" src="images/profile.jfif" style="width:230px;height:230px">
+</tr>
+<tr>
+</br></br>
+<b><h4 align="center">M/S John Doe</h4></b>
+<span class="glyphicon glyphicon-star" style="margin-left:45%">3.7</span>
+</br></br>
+<strong><h5 align="center"><b>Contact</b></h5></strong>
+
+<h5 align="center">978601XXXX</h5>
+</br></br>
+<strong><h5 align="center"><b>Address</b></h5></strong>
+
+<h5 align="center">sdjfjshgsbv uhsfdguhsfdhs sahnvushnfguhnsv hnsvuhshnu uhsfvhufu hnnhfuhnfuhn</h5>
+</br>
+<input type="submit" id="remove7" class="btn btn-default" value="Contact Grizzly" style="width:200px;">
+
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>?

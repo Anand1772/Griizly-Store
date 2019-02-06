@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+.to{
+width:100%;
+background-color:#DCDCDC;
+height:65px;
+}
+.cent{
+margin-left:70px;
+margin-top:15px;
+}
+.to1{
+margin-left:40px;
+margin-top:40px;
+width:350px;
+background-color:lightgrey;
+height:700px;
+}
+.to2{
+
+margin-top:10px;
+
+ 
+  border: 5px solid lightgrey;
+background-color:darkgrey;
+height:65px;
+
+}
+.conta{
+margin-top:50px;
+margin-left:100px;
+}
+.t{
+background-color:lightgrey;
+color:grey;
+}
+.y{
+margin-left:500px;
+margin-top:0;
+}
+.ta{
+background-color:grey;
+color:black;
+}
+.but{
+width:80px;
+border-radius:15px;
+margin-left:30px;
+margin-top:12px;
+background-color:dimgrey;
+color:black;
+}
+#div1 {
+text-align:center;
+font-face:verdana;
+font-weight:bold;
+}
+input[type="text"], input[type="password"]
+{
+width:20%;
+align-content:center;
+border-radius:20px;
+background-color:#ebebeb;
+left:100%;
+display:block;
+margin:0 auto;
+}
+input[type="submit"]
+{
+background-color:#aeaeae;
+border-radius:20px;
+width:10%;
+font-face:verdana;
+font-weight:bold;
+font-color:#5d5d5d;
+}
+#navdiv
+{
+background-color:#f2f2f2;
+}
+#srch-term, #searchbtn
+{
+border-radius:20px;
+background-color:#fff;
+margin-top:2px;
+}
+#notif-button
+{
+text-align:center;
+display:block;
+margin:0 auto;
+}
+#bodydiv
+{
+position:relative;
+top:50px;
+padding:30px;
+}
+
+div.well
+{
+width:80%;
+height:700px;
+}
+#pill
+{
+background-color:#727272;
+width:1300px;
+height:70px;
+}
+#products, #vendors, #category
+{
+font-family: "Trebuchet MS";
+color:black;
+font-size:30px;
+height:60px;
+}
+#pill>li.active,
+#pill>li:hover,
+#pill>li:focus {
+   background-color: light grey;
+}
+#products-table th.regular{
+font-family: "Trebuchet MS";
+color:#808080;
+/*width:200%;*/
+border-width:2px;
+text-align:center;
+padding:10px;
+font-size:18px;
+border-color: white #c6c5c5 #c6c5c5 white;
+}
+#products-table td.regular{
+font-family: "Trebuchet MS";
+border-width:2px;
+color:black;
+font-weight:bold;
+text-align:center;
+padding:7px;
+font-size:18px;
+border-color: white #c6c5c5 #c6c5c5 white;
+}
+#products-table td.regular-rating{
+font-family: "Trebuchet MS";
+border-width:2px;
+color:#7c7c7c;
+font-weight:bold;
+text-align:center;
+padding:7px;
+font-size:18px;
+border-color: white #c6c5c5 #c6c5c5 white;
+}
+#products-table th.lastcol
+{
+border-color: white white #c6c5c5 white;
+border-width:2px;
+text-align:center;
+padding:10px;
+font-family: "Trebuchet MS";
+}
+#products-table td.lastcol
+{
+border-color: white white #c6c5c5 white;
+border-width:2px;
+text-align:center;
+padding:10px;
+font-family: "Trebuchet MS";
+}
+#products-table
+{
+
+width:1300px;
+margin-left:6%;
+}
+#products-table th.lastcol input.btn btn-default{
+width:500px;
+}
+#productcheck{
+}
+.name {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.name input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius:50px;
+}
+.name input:checked ~ .checkmark {
+  background-color: black;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.name input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.name .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#home
+{
+margin-left:6%;
+}
+#remove7
+{
+	color:white;
+	margin-left:20%;
+}
+</style>
+<body>
+<div  class="to">
+<table cellspacing="10">
+<tr>
+<td><h3>&nbsp&nbsp&nbsp&nbspGRIZZLY</h3></td>
+<td><img src ="images/logo.png" style="width:50px;height:35px;margin-left:10px;margin-top:5px;"></td>
+<td><h3>&nbsp&nbspSTORE</h3></td>
+<td><div class="form-group has-feedback" >
+   <div>
+    <input style="margin-left:40px;margin-top:14px;border-radius:25px;" class="search_b" type="search" class="form-control" placeholder="  Search"  >
+<span  style="margin-top:12px;" class="glyphicon glyphicon-search form-control-feedback"></span>
+</div>
+  </div>
+</td>
+<td><span class="glyphicon glyphicon-bell" style="margin-left:900px;margin-top:12px;"></span></td>
+<td><h4 style="margin-left:20px;margin-top:20px;">Welcome, John Doe&nbsp&nbsp&nbsp&nbsp</h4></td>
+<td>
+<a href="fclogin.html"><div><button class="but" type="button" class="btn btn-default">Logout</button></div></a>
+</td>
+</tr>
+</table>
+<div class="conta" >
+<div class="container">
+
+  <ul class="nav nav-tabs nav-justified">
+     <li class="nav-item"><a class="nav-link active t"href="secondpage.html">PRODUCT</a></li>
+    <li class="nav-item"><a class="nav-link active t" href="finalpage.html">INVENTORY</a></li>
+    <li class="nav-item"><a class="nav-link active ta" href="profile.html">PROFILE</a></li>
+  </ul>
+</div>
+</div>
+</br>
+</div>
+</div>
+<div class="to1">
+<div class="to2">
+<h2 style="margin-top:12px;color:white;">&nbsp&nbspPROFILE</h2>
+
+</div>
+<div  >
+<table>
+<tr>
+<img class="cent" src="images/profile.jfif" style="width:230px;height:230px">
+</tr>
+<tr>
+</br></br>
+<b><h4 align="center">M/S John Doe</h4></b>
+<span class="glyphicon glyphicon-star" style="margin-left:45%">3.7</span>
+</br></br>
+<strong><h5 align="center"><b>Contact</b></h5></strong>
+
+<h5 align="center">978601XXXX</h5>
+</br></br>
+<strong><h5 align="center"><b>Address</b></h5></strong>
+
+<h5 align="center">sdjfjshgsbv uhsfdguhsfdhs sahnvushnfguhnsv hnsvuhshnu uhsfvhufu hnnhfuhnfuhn</h5>
+</br>
+<input type="submit" id="remove7" class="btn btn-default" value="Contact Grizzly" style="width:200px;">
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>

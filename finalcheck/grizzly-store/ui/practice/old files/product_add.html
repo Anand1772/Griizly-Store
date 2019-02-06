@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin - Add Product</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<link href="styles/index1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div id="main" class="container-fluid row">
+		<div id="top">
+		<nav class="navbar navbar-default">	
+    		<div id="nav" class="navbar-header">
+      			<a class="navbar-brand" href="#"><img id="picture" src="images/logo.jpg"/></a>
+			</div>
+			<form class="navbar-form navbar-left">
+			 <div class="form-group has-feedback">	
+        				<input type="text" class="form-control" id="searchtext" placeholder="Search">
+        				<span id="search_icon" class="glyphicon glyphicon-search form-control-feedback"></span>
+   			</div>
+   			</form>
+   			
+			 <div id="last" class="navbar-form navbar-right">		
+        				<span id="noti_icon" class="glyphicon glyphicon-bell"></span>
+        				<span id="info"><b>Welcome, Admin &lt;name&gt;...</b></span>
+						<a href="index.html">
+   <button  id="logout">Logout</button>
+   </a>
+						<!--<input type="button" id="logout" value="Logout" href="index.html">-->
+        				
+   			</div>
+ 
+  		</nav>
+  		</div>
+  		<div id="middle" class="row">
+  			<div class="col-sm-1"></div>
+			<div class="col-sm-3" id=mid_left>
+				<div  align="center" id="profile_bar" class="row">
+					<div align="left" id="profile" >PROFILE</div>
+				</div>
+				<div align="center" id="profile_contents">
+					<img class="img-responsive" id="profilePicture" src="images/profile.jfif"/>
+					<h2>Helen Cho</h2>
+					<br>
+					<h4><b>ID</b></h4>
+					<br><h5 id="idspace">GRZLY17234</h5>
+					<br>
+					
+					<h4><b>Designation</b></h4>
+					<br><h5 id="idspace">Sr.Admin</h5>
+					<br>
+					<h4><b>Office</b></h4>
+					<br><h5 id="idspace3">NYC,NY,USA</h5>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+			<div  class="col-sm-6">
+				<div id="categories" class="row">
+				<ul class="nav nav-pills nav-justified" style="background-color:#e6e6e6;">
+    				<li><a style="color:grey;font-size:30px;" href="#">PRODUCTS</a></li>
+    				<li><a style="color:grey;font-size:30px;" href="#">VENDORS</a></li>
+    				<li><a style="color:grey;font-size:30px;" href="#">CATEGORY</a></li>
+  				</ul>
+  				</div>
+  				<div class="col-sm-7" >
+  					<div id="box">
+  						<img id="add_image" src="images/logo_image.png"/><br/>	
+  					</div>
+  					<div style="padding:20px;">
+  						<a target="_blank" href="images/logo_image.png">
+  						<img src="images/logo_image.png" alt="Forest" style="width:50px; height:50px; border: 2px solid black; padding: 2px;">
+  						<span><button type="button" class="btn btn-default" style="border-radius:50%; width:20px;height:20px; transform:translate(-60%,-120%); background-color: black; color:white;"><span style="position:absolute; transform:translate(-50%,0%);" class="glyphicon glyphicon-remove"></span></button></span>
+						</a>
+						<a target="_blank" href="images/logo_image.png">
+  						<img src="images/logo_image.png" alt="Forest" style="width:50px; height:50px; border: 2px solid black; padding: 2px;">
+  						<span><button type="button" class="btn btn-default" style="border-radius:50%; width:20px;height:20px; transform:translate(-60%,-120%); background-color: black; color:white;"><span style="position:absolute; transform:translate(-50%,0%);" class="glyphicon glyphicon-remove"></span></button></span>
+						</a>
+						<a target="_blank" href="images/logo_image.png">
+  						<img src="images/logo_image.png" alt="Forest" style="width:50px; height:50px; border: 2px solid black; padding: 2px;">
+  						<span><button type="button" class="btn btn-default" style="border-radius:50%; width:20px;height:20px; transform:translate(-60%,-120%); background-color: black; color:white;"><span style="position:absolute; transform:translate(-50%,0%);" class="glyphicon glyphicon-remove"></span></button></span>
+						</a>
+						<a target="_blank" href="images/logo_image.png">
+  						<img src="images/logo_image.png" alt="Forest" style="width:50px; height:50px; border: 2px solid black; padding: 2px;">
+  						<span><button type="button" class="btn btn-default" style="border-radius:50%; width:20px;height:20px; transform:translate(-60%,-120%); background-color: black; color:white;"><span style="position:absolute; transform:translate(-50%,0%);" class="glyphicon glyphicon-remove"></span></button></span>
+						</a>
+  					</div>
+
+                 
+				</div>
+				<div class="col-sm-3" >
+					<table class="table" >
+    					<tbody>
+      						<tr>
+        						<td><input class="abc" type="text" placeholder="Enter ProductID"/></td>
+      						</tr>
+      						<tr>
+      							<td>
+        						<select class="dropdown">
+  									<option value="Category">Category</option>
+  									<option value="fashion">Fashion</option>
+  									<option value="electronics">Electronics</option>
+  									<option value="healthcare">Healthcare</option>
+									<option value="automobile">Automobile</option>
+									</select>
+								</td>	
+      						</tr>
+      						<tr>
+        						<td><input class="abc" type="text" placeholder="Name"/></td>
+      						</tr>
+      						<tr>
+        						<td><input class="abc" type="text" placeholder="Description"/></td>
+      						</tr>
+      						<tr>
+        						<td><input class="abc" type="text" placeholder="Price"/></td>
+      						</tr>
+      						
+    				</tbody>
+  				</table>
+				
+				</div>
+				<div class="col-sm-1" id="buttons">
+  				<div class="col-sm-1">
+				<a href="product.html">
+   <button  id="add">Add</button>
+   </a></div><br/><br/>
+				<div class="col-sm-1">
+				<!--<input id="cancel" type="button" value="Cancel"/>-->
+				<a href="product_add.html">
+   <button  id="cancel">Cancel</button>
+   </a>
+				</div>
+				</div>
+			</div>
+			
+			
+  		
+  		<div>
+  		</div>
+	</div>
+	</div>
+	
+	 
+	
+</body>
+</html>
